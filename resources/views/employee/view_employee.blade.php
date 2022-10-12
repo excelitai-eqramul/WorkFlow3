@@ -39,6 +39,12 @@
                                                 <button type="button" class="btn btn-relief-danger"><a
                                                         href="{{ route('delete.employee', $employee->id) }}"> <i
                                                             class="fa fa-trash"></i> </a> </button>
+
+                                                            <button type="button" class="btn btn-relief-danger"><a
+                                                                href="{{ route('employeeWise_task_show', $employee->id) }}"> <i
+                                                                    class="fa fa-eye"></i> </a> </button>
+
+
                                             </td>
                                         </tr>
                                     @endforeach

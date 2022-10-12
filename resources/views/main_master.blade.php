@@ -39,14 +39,11 @@
     </style>
 
 
-    {{-- @include('body.style') --}}
 
 
 </head>
 
 <body>
-
-
 
 
     @include('made_template')

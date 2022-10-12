@@ -167,7 +167,6 @@
 
                                         <td><a
                                                 href="{{ route('all.project_search', optional($task->project)->id) }}">{{ optional($task->project)->name }}</a><br>
-                                            {{-- <a href="{{ route('all.project_data') }}">{{ optional($task->project)->id }}</a> --}}
 
                                         </td>
 
@@ -217,11 +216,11 @@
                                         </td>
 
                                         {{-- <td>{{ optional($task->task_parent)->name }}<br>{{ $task->name }}</td> --}}
+                                        
                                         <td>{{ $task->start_date }}</td>
                                         <td>{{ $task->dead_line }}</td>
                                         <td>{{ $task->end_date }}</td>
                                         <td>
-
                                             <div class="progress">
                                                 <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                                     aria-valuemin="0" aria-valuemax="100"
@@ -229,7 +228,6 @@
                                                     <span class="sr-only">70% Complete</span>
                                                 </div>
                                             </div>
-
                                         </td>
                                         <td>{{ $task->status }}</td>
                                         <td>{{ $task->type }}</td>
@@ -240,39 +238,21 @@
                                         <td>{{ $task->working_time }}</td>
                                         <td style="font-weight: bold">{{ $task->tag }}</td>
 
-                                        {{-- {{asset('images/'. $project->upload_document)}} --}}
-
-
                                         <td><img src="{{asset($task->image)}}" alt=""
                                             style="height:55px; width:80px"></td>
 
-
-                                        {{-- <td><img src="{{ asset($task->image) }}" alt=""
-                                                style="height:55px; width:80px"></td> --}}
-
                                         <td>
-
-
-
                                             <button type="button" class="btn btn-relief-danger"><a
                                                     href="{{ route('edit.task', $task->id) }}">
                                                     <i class="fa fa-edit"></i></a> </button>
-
 
                                             <button type="button" class="btn btn-relief-danger"><a
                                                     href="{{ route('delete.task', $task->id) }}">
                                                     <i class="fa fa-trash"></i></a> </button>
 
-
                                                     <button type="button" class="btn btn-relief-danger"><a
                                                         href="{{ route('each.task_data_view', $task->id) }}">
                                                         <i class="fa fa-eye"></i></a> </button>
-
-
-
-
-
-
                                         </td>
                                     </tr>
                                 @endforeach

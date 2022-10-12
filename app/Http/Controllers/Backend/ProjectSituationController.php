@@ -18,8 +18,6 @@ class ProjectSituationController extends Controller
 
 
 
-
-
  // Running Project
  public function RunningProjectView()
  {

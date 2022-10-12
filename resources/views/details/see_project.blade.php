@@ -8,7 +8,7 @@
                 <div class="col-lg-8 col-md-4 col-sm-12">
                     <div class="card">
                         <div class="card-header border-bottom">
-                            <h5 class="card-title" style="font-weight: bold">Employee Detail</h5>
+                            <h5 class="card-title" style="font-weight: bold">Project Detail</h5>
                         </div>
                         <div class="card-datatable">
                             <table class="table employeeTable dt-responsive table dataTable dtr-column collapsed"

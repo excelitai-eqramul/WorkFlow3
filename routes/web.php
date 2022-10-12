@@ -47,6 +47,7 @@ Route::post('employee/store', [EmployeeController::class, 'EmployeeStore'])->nam
 Route::get('employee/edit/{id}', [EmployeeController::class, 'EmployeeEdit'])->name('edit.employee');
 Route::post('employee/update', [EmployeeController::class, 'EmployeeUpdate'])->name('update.employee');
 Route::get('employee/delete/{id}', [EmployeeController::class, 'EmployeeDelete'])->name('delete.employee');
+Route::get('employeeWise_task/show/{id}', [EmployeeController::class, 'EmployeeWiseTaskView'])->name('employeeWise_task_show');
 
 
 
@@ -74,7 +75,6 @@ Route::get('project_search/show/{id}', [TaskController::class, 'SeeProjectfromTa
 Route::get('module_search/show/{id}', [TaskController::class, 'SeeModulefromTaskTable'])->name('all.module_search');
 Route::get('feature_search/show/{id}', [TaskController::class, 'SeeFeaturefromTaskTable'])->name('all.feature_search');
 Route::get('task_search/show/{id}', [TaskController::class, 'SeeTaskfromTaskTable'])->name('all.task_search');
-
 Route::get('each_task_data/show/{id}', [TaskController::class, 'EachTaskDataView'])->name('each.task_data_view');
 
 

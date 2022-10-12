@@ -82,4 +82,17 @@ public function EmployeeDelete($id){
 }
 
 
+
+
+
+public function EmployeeWiseTaskView($id){
+    $employee=Employee::find($id);
+    $employeeWise_task_show = Task::where('employee_id', $id)->paginate(8);
+    return view('employee.view_employeeWiseTask',compact('employeeWise_task_show','employee'));
+}
+
+
+
+
+
 }
